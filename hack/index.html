@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartwatch Ideas </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smartwatch Scheduler</h1>
+    </header>
+    
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="img.png" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+
+
+
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+        <div class="firstHalf">
+            <p class="text-big">The Future Of Smartwatch is here</p>
+            <p class="text-small">As fitness trackers wobble, smart jewellery dies and VR and AR are still figuring things out, there’s no doubt that the smartwatch has emerged as the wearable tech the world actually wants.</p>
+            
+            <button class="btn">Subscribe</button>
+            <button class="btn">Watch Video</button>
+
+        </div>
+        
+        <div class="secondHalf">
+            <img src="img.png" alt="smartwatch image" width="200" height="200">
+        </div>
+
+    </section>
+
+    <main>
+        <section class="form-section">
+            <h2>Add to Your Schedule</h2>
+            <form id="schedule-form">
+                <label for="task">Task:</label>
+                <input type="text" id="task" name="task" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        
+        <section class="schedule-section">
+            <h2>Your Schedule</h2>
+            <ul id="task-list"></ul>
+        </section>
+        
+        <section class="reminder-section">
+            <h2>Upcoming Reminders</h2>
+            <p id="reminder-message">No reminders yet.</p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
